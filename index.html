@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Vittoria - Currículo</title>
+    <!-- Carrega Tailwind CSS (framework principal para utilitários de estilo) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link para o arquivo de estilos personalizado -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Carrega ícones Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="p-4 sm:p-8">
+
+    <div id="app" class="max-w-6xl mx-auto">
+        
+        <!-- HEADER / INTRO SECTION -->
+        <header class="text-center mb-10 p-6 bg-white rounded-xl shadow-lg">
+            <p class="text-xl sm:text-2xl font-light text-gray-600 mb-1">Olá, eu sou a</p>
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-gray-900 leading-tight">Maria Vittoria</h1>
+            <div class="mt-6 flex justify-center">
+                <!-- Imagem do Perfil: Usando um placeholder com a mesma proporção e um estilo profissional -->
+                <img 
+                    src="https://placehold.co/180x180/e5e7eb/333333?text=Foto" 
+                    alt="Foto de Maria Vittoria" 
+                    class="profile-photo w-40 h-40 object-cover rounded-full"
+                />
+            </div>
+            
+            <div class="flex flex-wrap justify-center mt-6 space-x-4">
+                <!-- Adicionando ícones de contato (simulando links) -->
+                <a href="mailto:marizvittoriatanners@gmail.com" class="text-gray-500 hover:text-blue-500 transition duration-150 flex items-center">
+                    <i data-lucide="mail" class="icon w-5 h-5 mr-1"></i>
+                    Email
+                </a>
+                <a href="tel:+5541999582426" class="text-gray-500 hover:text-blue-500 transition duration-150 flex items-center">
+                    <i data-lucide="phone" class="icon w-5 h-5 mr-1"></i>
+                    Telefone
+                </a>
+            </div>
+        </header>
+
+        <!-- MAIN CONTENT LAYOUT -->
+        <main class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <!-- COLUNA 1 (SOBRE E CONTATO - Sidebar no desktop) -->
+            <div class="lg:col-span-1 space-y-8">
+                
+                <!-- SEÇÃO SOBRE -->
+                <section class="sidebar p-6">
+                    <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-4 flex items-center">
+                        <i data-lucide="user" class="icon w-6 h-6 mr-2"></i>
+                        Sobre a Maria
+                    </h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Recém-formada em Direito pela **UFPR**, apaixonada pela advocacia e com forte interesse em trabalhar em escritórios.
+                    </p>
+                </section>
+
+                <!-- SEÇÃO CONTATO -->
+                <section class="sidebar p-6">
+                    <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-4 flex items-center">
+                        <i data-lucide="message-square" class="icon w-6 h-6 mr-2"></i>
+                        Contato
+                    </h2>
+                    <div class="space-y-3">
+                        <p class="flex items-center text-gray-700">
+                            <i data-lucide="mail" class="icon w-5 h-5 mr-3 flex-shrink-0"></i>
+                            <span class="truncate">marizvittoriatanners@gmail.com</span>
+                        </p>
+                        <p class="flex items-center text-gray-700">
+                            <i data-lucide="phone" class="icon w-5 h-5 mr-3 flex-shrink-0"></i>
+                            (41) 99958-2426
+                        </p>
+                        <p class="flex items-center text-gray-700">
+                            <i data-lucide="map-pin" class="icon w-5 h-5 mr-3 flex-shrink-0"></i>
+                            Curitiba, Paraná (Presumido)
+                        </p>
+                    </div>
+                </section>
+                
+                <!-- Imagens de Referência (Adaptadas do PDF) -->
+                <section class="sidebar p-6">
+                    <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-4 flex items-center">
+                        <i data-lucide="building" class="icon w-6 h-6 mr-2"></i>
+                        Referências
+                    </h2>
+                    <div class="space-y-4">
+                        <img src="https://placehold.co/400x200/cccccc/333333?text=UFPR/Escritório+1" alt="Imagem de prédio de escritório" class="w-full h-auto rounded-lg shadow-md">
+                        <img src="https://placehold.co/400x150/bbbbbb/333333?text=GSGA/Escritório+2" alt="Imagem de outro prédio" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- COLUNA 2 (FORMAÇÃO, EXPERIÊNCIA, PROJETOS - Main Content no desktop) -->
+            <div class="lg:col-span-2 space-y-8">
+
+                <!-- SEÇÃO FORMAÇÃO -->
+                <section class="content-section">
+                    <h2 class="text-3xl font-extrabold text-blue-700 mb-6 flex items-center">
+                        <i data-lucide="graduation-cap" class="icon w-8 h-8 mr-3"></i>
+                        Formação Acadêmica
+                    </h2>
+                    <ol class="space-y-6">
+                        <li class="border-l-4 border-blue-500 pl-4">
+                            <p class="text-lg font-semibold text-gray-800">Direito - Universidade Federal do Paraná (UFPR)</p>
+                            <p class="text-sm text-gray-500">2028 - 2033</p>
+                        </li>
+                        <li class="border-l-4 border-gray-300 pl-4">
+                            <p class="text-lg font-semibold text-gray-800">Colégio estadual Paulina Pacífico Borsari</p>
+                            <p class="text-sm text-gray-500">2025 - 2027</p>
+                        </li>
+                        <li class="border-l-4 border-gray-300 pl-4">
+                            <p class="text-lg font-semibold text-gray-800">Colégio Nossa Senhora Medianeira</p>
+                            <p class="text-sm text-gray-500">2012 - 2024</p>
+                        </li>
+                        <li class="border-l-4 border-gray-300 pl-4">
+                            <p class="text-lg font-semibold text-gray-800">Influx - Curso de Inglês</p>
+                            <p class="text-sm text-gray-500">2022 - 2024</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <!-- SEÇÃO EXPERIÊNCIA -->
+                <section class="content-section">
+                    <h2 class="text-3xl font-extrabold text-blue-700 mb-6 flex items-center">
+                        <i data-lucide="briefcase" class="icon w-8 h-8 mr-3"></i>
+                        Experiência Profissional
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="border-l-4 border-blue-500 pl-4">
+                            <p class="text-xl font-bold text-gray-800">Gaia Silva Gaede Advogados (GSGA)</p>
+                            <p class="text-md font-semibold text-gray-700">Estagiária/Assistente Jurídica</p>
+                            <p class="text-sm text-gray-500">2029 - 2030</p>
+                            <p class="mt-2 text-gray-600">Descrição resumida do papel (adicionar detalhes se disponíveis).</p>
+                        </div>
+                        <div class="border-l-4 border-gray-300 pl-4">
+                            <p class="text-xl font-bold text-gray-800">Polícia Federal do Paraná</p>
+                            <p class="text-md font-semibold text-gray-700">Área Administrativa</p>
+                            <p class="text-sm text-gray-500">2028 - 2029</p>
+                            <p class="mt-2 text-gray-600">Atuação em rotinas de suporte e organização administrativa.</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- SEÇÃO PROJETOS/OBJETIVOS -->
+                <section class="content-section">
+                    <h2 class="text-3xl font-extrabold text-blue-700 mb-6 flex items-center">
+                        <i data-lucide="target" class="icon w-8 h-8 mr-3"></i>
+                        Objetivos Profissionais
+                    </h2>
+                    <p class="text-gray-600 leading-relaxed text-lg italic">
+                        Busco oportunidades para desenvolver minhas **habilidades práticas** e me tornar uma advogada competente e dedicada, aprendendo com profissionais experientes e contribuindo ativamente para a excelência dos serviços prestados.
+                    </p>
+                </section>
+
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Link para o arquivo de script no final do corpo para otimizar o carregamento -->
+    <script src="script.js"></script>
+</body>
+</html>
